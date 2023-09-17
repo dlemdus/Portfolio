@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Secure Page</title>
+	<link rel="stylesheet" href="login.css">
+	<link
+     href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
+
+</head>
+<body>
+	<div class="center">
+		<form action="">
+			<div class="title">Secure Page</div>
+			<span class="inputs">
+				<span class="inputf">
+          <span class="inputm">
+					    <input type="name" class="input" placeholder="Name" />
+				  </span>
+				  <span class="inputf">
+              <input type="email" class="input" placeholder="Email" />
+           </span>
+      <p>
+       <img src="code.jpg" width="200">
+          <span class="inputm">
+              <input type="code" class="input" placeholder="Enter the Code above" /></p>
+          </span>
+        </span>
+
+        </span>
+        <div class="links">
+          <label for="remember">
+            <input type="checkbox" id="remember" />
+            I am Human
+          </label>
+        </div>
+        <button type="button" class="btn">
+          <span>Continue</span>
+          <div class="dots">
+            <div class="dot" style="--delay: 0s"></div>
+            <div class="dot" style="--delay: 0.25s"></div>
+            <div class="dot" style="--delay: 0.5s"></div>
+          <a href="file:///C:/Users/diane/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%BD%94%EB%94%A9/School/Project/Portfolio%20Website/index.html"></a>
+          </div>
+        </button>
+        <div class="text">
+          If you don't want this page <a href="#">SKIP</a>
+        </div>
+      </form>
+    </div>
+    <script>
+      var btn = document.querySelector(".btn");
+      var inputs = document.querySelectorAll(".input");
+      btn.onclick = function () {
+        btn.classList.toggle("active");
+        setTimeout(() => {
+          btn.classList.toggle("active");
+          inputs[1].classList.toggle("active");
+        }, 1500);
+        setTimeout(() => {
+          inputs[1].classList.toggle("active");
+        }, 3000);
+      };
+    </script>
+
+  </body>
+</html>
